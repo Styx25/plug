@@ -6,3 +6,7 @@ API.chatLog("AutoWoot je zapnutý! Verzia 1.0");
 	$('#woot').click();
   }
 })();
+
+;(function(){
+	$("#woot").click();
+}
