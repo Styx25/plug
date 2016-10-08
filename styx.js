@@ -1,4 +1,4 @@
-API.chatLog("plugin je zapnutý! Verzia 1.0!");
+API.chatLog("Plugin je zapnutý! Verzia 1.0!");
 
 API.on(API.CHAT, afk);
 function afk(data){
