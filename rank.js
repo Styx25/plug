@@ -15,3 +15,4 @@ else{
 API.sendChat("[@"+ from +"] Nemáš práva na použitie!");
 }
 }
+}
