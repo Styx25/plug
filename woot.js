@@ -10,3 +10,5 @@ API.chatLog("AutoWoot je zapnutý! Verzia 1.0");
 
 ;function(){
 	$('dj-button').click();
+	
+}
