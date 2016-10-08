@@ -4,10 +4,6 @@ API.chatLog("AutoWoot je zapnutý! Verzia 1.0");
   API.on(API.ADVANCE,callback).trigger(API.ADVANCE);
   function callback(){
 	$('#woot').click();
-	  function(){
-	$('dj-button').click();
-	
-}
 	
   }
 })();
