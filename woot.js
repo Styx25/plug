@@ -4,12 +4,8 @@ API.chatLog("AutoWoot je zapnutý! Verzia 1.0");
   API.on(API.ADVANCE,callback).trigger(API.ADVANCE);
   function callback(){
 	$('#woot').click();
-	
-  }
-})();
-
-
-    API.getWaitListPosition = function(id){
+	  
+	    API.getWaitListPosition = function(id){
         if(typeof id === 'undefined' || id === null){
             id = API.getUser().id;
         }
@@ -21,3 +17,8 @@ API.chatLog("AutoWoot je zapnutý! Verzia 1.0");
         }
         return -1;
     };
+  }
+})();
+
+
+
