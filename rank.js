@@ -9,7 +9,7 @@ var fromid = data.uid;
   
 if(msg === "!rankinfo"){
 if(fromid == "4515471"){
-setTimeout(function(){ API.sendChat("[@"+ from +"] Rank 1: 1 000 coins | Rank 2: 2 500 coins"); }, 2000);
+setTimeout(function(){ API.sendChat("[@"+ from +"] Rank 1: 1 000 coins | Rank 2: 1 600 coins | Rank 3: 2 500"); }, 2000);
 }
 else{
 API.sendChat("[@"+ from +"] Nemáš práva na použitie!");
