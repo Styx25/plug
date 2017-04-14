@@ -1,3 +1,675 @@
-#app-menu{
-background-color: red;
+/*
+
+COPYRIGHTÂ»                         QPlug.cz 2017
+CREATORÂ»                           Hellbyte
+DEVELOPERSÂ»                        Hellbyte, Tessi Tess
+ROOMÂ»                              https://plug.dj/qplug-czsk
+
+AkĂ©koÄľvek kopĂ­rovanie tohoto obsahu alebo dokumentu sa bude rieĹˇiĹĄ s AdministrĂˇtormi plug.dj!
+- Marvin (xBytez)
+- Dom (Origin)
+- Brett (sinful)
+
+*/
+
+@import url("https://qplugcz.github.io/staff/style.css");
+@import url("https://qplugcz.github.io/vip/style.css");
+@import url("https://fonts.googleapis.com/css?family=Roboto");
+
+html, body{
+font-family: "Roboto", sans-serif;
 }
+
+/* DASHBOARD */
+
+#dashboard{
+background: rgba(15, 15, 15, 0.95) !important;
+}
+
+.communities .grid .cell .meta .join{
+background: none !important;
+}
+
+.communities .grid .cell:hover>.meta{
+background: rgba(0, 0, 0, 0.85) !important;
+}
+
+.communities .grid .cell .bar, .communities .grid .cell .favorite, .communities .grid .cell .meta, .communities .grid .cell{
+background: #000 !important;
+}
+
+.communities .grid .cell .favorite .icon-grab{
+background-position: -40px -280px !important;
+}
+
+#dashboard .tab-menu button.selected{
+box-shadow: inset 0px -3px #009CDD;
+background: none;
+}
+
+#dashboard .tab-menu button{
+background: none !important;
+}
+
+#dashboard .tab-menu button:not(.selected){
+box-shadow: inset 0px -3px rgb(30,30,30);
+}
+
+#dashboard .tab-menu button:not(.selected):hover{
+color: #808691;
+}
+
+.communities .grid .cell .meta .host{
+background: none;
+}
+
+#dashboard .search{
+background: transparent;
+}
+
+#dashboard .search.focused{
+box-shadow: inset 0 0 0 1px #323742 !important;
+}
+
+#room-name{
+font-family: "Open Sans", sans-serif;
+top: 5px;
+}
+
+/****************************************************************************************************************************/
+
+/* ROOM SETTINGS */
+
+#room-settings{
+background: rgba(15, 15, 15, 0.95);
+}
+
+#room-settings-menu{
+background: rgba(15, 15, 15, 0.95);
+}
+
+#room-settings-menu .item.selected{
+box-shadow: inset 0px -3px #009CDD;
+background: none;
+}
+
+#room-settings .general-settings .option button.off{
+background: none;
+box-shadow: inset 0px -3px #009CDD;
+}
+
+#room-settings .general-settings .input-background.focused{
+background: none;
+}
+
+#room-settings .general-settings .option button.on{
+background: none;
+}
+
+.chat-level.option .dropdown{
+background: transparent;
+box-shadow: inset 0px -3px #009CDD;
+}
+
+.dropdown dd{
+background: none;
+border-left: 1px solid #009CDD;
+border-right: 1px solid #009CDD;
+border-bottom: 1px solid #009CDD;
+}
+
+.dropdown dd .row{
+background: rgba(15, 15, 15, 0.95);
+color: #808691;
+}
+
+.dropdown dd .row:hover{
+background: rgba(15, 15, 15, 0.95);
+color: white;
+}
+
+#room-settings .general-settings .description .value a:last-of-type{
+display: none !important;
+}
+
+#room-settings .general-settings .description .value:after{
+content: "NedostupnĂ©!";
+color: gray;
+}
+
+#room-settings .general-settings a{
+color: #009CDD; !important;
+text-decoration: none;
+}
+
+#room-settings .general-settings{
+position: relative;
+background: url("https://qplugcz.github.io/icons/qplug-logo.png");
+background-repeat: no-repeat;
+background-position: 47% 325px;
+}
+
+/****************************************************************************************************************************/
+
+/* USER LIST */
+
+#user-list .list .role-host{
+color: #AC76FF;
+}
+
+#user-list .list .role-cohost{
+color: #AC76FF;
+}
+
+#user-list .list .role-manager{
+color: #AC76FF;
+}
+
+#user-list .list .role-bouncer{
+color: #AC76FF;
+}
+
+#user-list .list .role-dj{
+color: #AC76FF;
+}
+
+.is-subscriber .name{
+color: #C59840;
+}
+
+#user-lists .list .user:not(.is-staff) .name{
+color: silver;
+}
+
+#user-list .list .is-subscriber.silver .name{
+color: red !important;
+}
+
+#user-lists .list .user:not(.is-staff) .name{
+color: silver;
+}
+
+#user-lists .list .user{
+transition: 0.4s;
+}
+
+#user-lists .list .user.is-staff:hover, #user-lists .list .user:hover, #user-lists .list.bans .user:hover, #user-lists .list.mutes .user:hover{
+box-shadow: inset 3px 0px 0px rgba(172, 118, 255, 0.7);
+}
+
+/****************************************************************************************************************************/
+
+/* HEADER */
+
+.app-header{
+background: rgba(15, 15, 15, 0.95);
+}
+
+#rs-skip-button{
+background: rgba(15, 15, 15, 0.95) !important;
+transition: 0.4s;
+}
+
+#rs-skip-button:hover{
+box-shadow: inset 0px -3px #009CDD;
+}
+
+#history-button{
+background: rgba(15, 15, 15, 0.95);
+transition: 0.4s;
+}
+
+#history-button:hover{
+box-shadow: inset 0px -3px #009CDD;
+}
+
+/****************************************************************************************************************************/
+
+/* MENU | LOGO */
+
+#app-menu{
+background: rgba(15, 15, 15, 0.95);
+}
+
+#app-menu .list{
+background: rgba(15, 15, 15, 0.95);
+}
+
+#app-menu.in-room .button i{
+background: url("https://qplugcz.github.io/icons/qplug-logo.png");
+}
+
+#app-menu .list:after{
+position: relative;
+content: "\A" url("https://qplugcz.github.io/icons/qplug-facebook.png") " bit.ly/QPlugcz";
+top: 10px;
+left: 10px;
+display: block;
+}
+
+/****************************************************************************************************************************/
+
+/* APP RIGHT | CHAT */
+
+#room .app-right{
+background: rgba(15, 15, 15, 0.95);
+}
+
+#chat-messages{
+background: rgba(15, 15, 15, 0.95) !important;
+}
+
+#chat .cm{
+background: rgba(15, 15, 15, 0.95) !important;
+}
+
+#chat .emote .text{
+font-style: normal;
+}
+
+#chat .welcome{
+color: white;
+border: 1px solid #009CDD;
+background: transparent !important;
+}
+
+#chat-input-field{
+font-family: "Roboto", sans-serif;
+}
+
+#chat-input, #chat-input.focused{
+background: none;
+box-shadow: inset 0 0 0 1px #323742 !important;
+}
+
+.header-panel-button.selected{
+box-shadow: inset 0px -3px #009CDD;
+transition: 0.4s;
+background: rgba(15, 15, 15, 0.95);
+}
+
+#chat .mention .msg{
+background: linear-gradient(135deg,#0f0f0f 0,#0f0f0f 13%,#0f0f0f 100%) !important;
+background: -webkit-linear-gradient(-45deg,#0f0f0f 0,#0f0f0f 13%,#0f0f0f 100%) !important;
+border-left: 4px solid #AC76FF;
+}
+
+/* FRIENDS | Original code by -PinguiN- (https://plug.dj/@/-pinguin-) */
+
+.app-right .friends .list .row .room{
+transition: 0.5s;
+right: -6px;
+}
+
+.app-right .friends .list .row .room:hover{
+background: #009CDD;
+color: #fff;
+padding: 10px;
+top: -10px;
+}
+
+.app-right .friends .list .row{
+transition: 0.5s;
+}
+
+.app-right .friends .list .row:hover{
+background: rgba(0, 156, 221, 0.3) !important;
+box-shadow: inset 4px 0px 0px #009CDD;
+}
+
+.app-right .friends .list .row.clickable .room:hover{
+text-decoration: none;
+}
+
+.app-right .friends .list .row.is-offline{
+transition: 0.5s;
+}
+
+.app-right .friends .list .row.is-offline:hover{
+box-shadow: inset 4px 0px 0px #CC5151;
+background: rgba(204,81,81,0.2) !important;
+}
+
+.app-right .friends .list .row.is-offline .room:hover{
+background: #CC5151 !important;
+}
+
+/****************************************************************************************************************************/
+
+/* FOOTER */
+
+#footer{
+background: rgba(15, 15, 15, 0.95);
+}
+
+#footer-user .back{
+background: transparent;
+color: gray;
+transition: 0.4s;
+right: -6px;
+}
+
+#footer-user .back:hover{
+background: transparent;
+color: white;
+padding: 10px;
+}
+
+#footer-user .buttons .button{
+-webkit-box-shadow: inset 0 0 !important;
+-moz-box-shadow: inset 0 0 !important;
+-o-box-shadow: inset 0 0 !important;
+box-shadow: inset 0 0 !important;
+}
+
+#footer-user .inventory{
+color: rgba(15, 15, 15, 0.95);
+} 
+
+#footer-user .badge{
+color: rgba(15, 15, 15, 0.95) !important;
+} 
+
+#footer-user .store{
+color: rgba(15, 15, 15, 0.95) !important;
+} 
+
+#footer-user .profile{
+color: rgba(15, 15, 15, 0.95) !important;
+} 
+
+#footer-user .settings{
+color: rgba(15, 15, 15, 0.95) !important;
+} 
+
+#footer-user .inventory, #footer-user .badge, #footer-user .store, #footer-user .profile, #footer-user .settings{
+-webkit-transition: all 0.4s linear;
+-moz-transition: all 0.4s linear;
+-o-transition: all 0.4s linear;
+transition: all 0.4s linear;
+}
+
+#footer-user{
+-webkit-transition: all 0.4s ease;
+-moz-transition: all 0.4s ease;
+-o-transition: all 0.4s ease;
+transition: all 0.4s ease;
+}
+
+#footer-user .inventory:hover, #footer-user .badge:hover, #footer-user .store:hover, #footer-user .profile:hover, #footer-user .settings:hover{
+background: transparent !important;
+-webkit-box-shadow: inset 0px -3px 0px #009CDD !important;
+-moz-box-shadow: inset 0px -3px 0px #009CDD !important;
+-o-box-shadow: inset 0px -3px 0px #009CDD !important;
+box-shadow: inset 0px -3px 0px #009CDD !important;
+}
+
+/****************************************************************************************************************************/
+
+/* PLAYBACK */
+
+#playback-controls div.button.refresh, #playback-controls div.button.hd, #playback-controls div.button.snooze, #playback-controls div.button.stream { 
+background: rgba(28,31,37,.7) !important; 
+}
+
+#playback .background{
+visibility: hidden;
+}
+
+/****************************************************************************************************************************/
+
+/* APP SETTINGS */
+
+#user-menu{
+background: rgba(15, 15, 15, 0.95);
+}
+
+#user-menu .item.profile{
+color: gray;
+transition: 0.4s;
+}
+
+#user-menu .item.profile.selected{
+background: transparent;
+color: white;
+box-shadow: inset 0px -3px #009CDD;
+transition: 0.4s;
+}
+
+#user-menu .item.profile:not(.selected):hover{
+margin-left: 5px;
+}
+
+#user-menu .item.inventory.selected{
+background: transparent;
+color: white;
+box-shadow: inset 0px -3px #009CDD;
+transition: 0.4s;
+}
+
+#user-menu .item.inventory:not(.selected):hover{
+margin-left: 5px;
+}
+
+#user-menu .item.inventory{
+color: gray;
+transition: 0.4s;
+}
+
+#user-menu .item.store.selected{
+background: transparent;
+color: white;
+box-shadow: inset 0px -3px #009CDD;
+transition: 0.4s;
+}
+
+#user-menu .item.store:not(.selected):hover{
+margin-left: 5px;
+}
+
+#user-menu .item.store{
+color: gray;
+transition: 0.4s;
+}
+
+#user-menu .item.friends.notify.selected{
+background: transparent;
+color: white;
+box-shadow: inset 0px -3px #009CDD;
+transition: 0.4s;
+}
+
+#user-menu .item.friends.notify:not(.selected):hover{
+margin-left: 5px;
+}
+
+#user-menu .item.friends.notify{
+color: gray;
+transition: 0.4s;
+}
+
+#user-menu .item.played.selected{
+background: transparent;
+color: white;
+box-shadow: inset 0px -3px #009CDD;
+transition: 0.4s;
+}
+
+#user-menu .item.played:not(.selected):hover{
+margin-left: 5px;
+}
+
+#user-menu .item.played{
+color: gray;
+transition: 0.4s;
+}
+
+#user-menu .item.community.selected{
+background: transparent;
+color: white;
+box-shadow: inset 0px -3px #009CDD;
+transition: 0.4s;
+}
+
+#user-menu .item.community:not(.selected):hover{
+margin-left: 5px;
+}
+
+#user-menu .item.community{
+color: gray;
+transition: 0.4s;
+}
+
+#user-menu .item.settings.selected{
+background: transparent;
+color: white;
+box-shadow: inset 0px -3px #009CDD;
+transition: 0.4s;
+}
+
+#user-menu .item.settings:not(.selected):hover{
+margin-left: 5px;
+}
+
+#user-menu .item.settings{
+color: gray;
+transition: 0.4s;
+}
+
+#the-user-profile{
+background: rgba(15, 15, 15, 0.95);
+}
+
+#user-inventory{
+background: rgba(15, 15, 15, 0.95);
+}
+
+#user-store{
+background: rgba(15, 15, 15, 0.95);
+}
+
+#user-friends{
+background: rgba(15, 15, 15, 0.95);
+}
+
+#user-history{
+background: rgba(15, 15, 15, 0.95);
+}
+
+#user-communities{
+background: rgba(15, 15, 15, 0.95);
+}
+
+#user-settings{
+background: rgba(15, 15, 15, 0.95);
+}
+
+#user-settings .container .item span{
+transition: 0.4s;
+}
+
+#user-settings .container .item span:hover{
+padding-left: 5px;
+}
+
+/****************************************************************************************************************************/
+
+/* PLAYLIST */
+
+#playlist-button{
+background: none;
+transition: 0.4s;
+}
+
+#playlist-button:hover{
+box-shadow: inset 0px -3px #009CDD;
+}
+
+/****************************************************************************************************************************/
+
+/* HLASOVANIE */
+
+#vote{
+transition: 0.6s;
+}
+
+#vote:hover{
+margin-top: -15px;
+}
+
+#woot.crowd-response.disabled.active, #grab.crowd-response.disabled.active, #meh.crowd-response.disabled.active{
+background: rgba(15, 15, 15, 0.95);
+}
+
+#woot .bottom{
+background: #90AD2F;
+}
+
+#grab .bottom{
+background: #AA74FF;
+}
+
+#meh .bottom{
+background: #FF5555;
+}
+
+#vote .crowd-response.disabled .bottom{
+background: rgba(15, 15, 15, 0.95);
+}
+
+#woot.crowd-response.active.selected, #grab.crowd-response.active.selected, #meh.crowd-response.active.selected{
+background: rgba(15, 15, 15, 0.95);
+}
+
+#woot.crowd-response.active.selected .bottom{
+box-shadow: inset 0px 3px 0px #90AD2F;
+transition: 0.5s;
+}
+
+#grab.crowd-response.active.selected .bottom{
+box-shadow: inset 0px 3px 0px #AA74FF;
+transition: 0.5s;
+}
+
+#meh.crowd-response.active.selected .bottom{
+box-shadow: inset 0px 3px 0px #FF5555;
+transition: 0.5s;
+}
+
+#woot.crowd-response, #grab.crowd-response, #meh.crowd-response{
+background: rgba(15, 15, 15, 0.95);
+}
+
+/****************************************************************************************************************************/
+
+/* DJ BUTTON */
+
+#dj-button{
+background: rgba(15, 15, 15, 0.95);
+border-radius: 10px;
+}
+
+#dj-button .left{
+background: #009CDD;
+border-radius: 10px;
+border-top-right-radius: 0;
+border-bottom-right-radius: 0;
+}
+
+#dj-button{
+transition: 0.6s;
+}
+
+#dj-button:hover{
+margin-top: -15px;
+border-bottom-right-radius: 0;
+}
+
+#dj-button.is-quit .left, #dj-button.is-leave .left{
+background: rgba(204, 81, 81, 0.95);
+border-radius: 10px;
+border-top-right-radius: 0;
+border-bottom-right-radius: 0;
+}
+
+/****************************************************************************************************************************/
