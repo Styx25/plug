@@ -6,7 +6,7 @@ if (!document.getElementById(cssId))
     link.id   = cssId;
     link.rel  = 'stylesheet';
     link.type = 'text/css';
-    link.href = 'style.css';
+    link.href = 'http://rawgit.com/Styx25/plug/master/javascript/style.css';
     link.media = 'all';
     head.appendChild(link);
 }
