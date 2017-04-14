@@ -10,3 +10,6 @@ if (!document.getElementById(cssId))
     link.media = 'all';
     head.appendChild(link);
 }
+
+
+document.write("test").classList.toggle("link");
